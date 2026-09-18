@@ -6,11 +6,10 @@ import Default from '@astrojs/starlight/components/Footer.astro';
 <Default {...Astro.props} />
 
 <div class="custom-footer-link">
-  <a href="/referensi/">📖 Lihat Referensi & Daftar Pustaka</a>
+  <a href="/referensi">📖 عرض المراجع والمصادر</a>
 
   <div class="footer-meta">
-    <p>&copy; {new Date().getFullYear()} Komunikasi Efektif ala Nabi. Hak Cipta Dilindungi.</p>
-    
+    <p>&copy; {new Date().getFullYear()} التواصل الفعال على طريقة النبوة. جميع الحقوق محفوظة.</p>
   </div>
 </div>
 
@@ -37,12 +36,5 @@ import Default from '@astrojs/starlight/components/Footer.astro';
   }
   .footer-meta p {
     margin: 0;
-  }
-  .social-links {
-    margin-top: 0.5rem;
-  }
-  .separator {
-    margin: 0 0.5rem;
-    color: var(--sl-color-gray-5);
   }
 </style>

@@ -4,46 +4,58 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
-      title: 'Komunikasi Efektif ala Nabi',
+      title: 'التواصل الفعال على طريقة النبوة', // Komunikasi Efektif ala Nabi
+      defaultLocale: 'ar',
+      locales: {
+        root: {
+          label: 'العربية',
+          lang: 'ar',
+          dir: 'rtl', // Mengaktifkan mode baca dari kanan ke kiri (RTL)
+        },
+      },
       customCss: [
         './src/styles/custom.css',
       ],
-      defaultLocale: 'root',
       components: {
         Footer: './src/components/CustomFooter.astro',
-        // Tambahkan baris ini untuk mengganti ikon social dengan tombol tulisan "Versi Inggris"
         SocialIcons: './src/components/LanguageSwitch.astro',
       },
       sidebar: [
         {
-          label: 'Pendahuluan',
+          label: 'المقدمة', // Pendahuluan
           items: [
-            { label: 'Pengantar', slug: 'pengantar' },
+            { label: 'مقدمة الكتاب وطريقة الاستخدام', slug: 'المقدمة-وطريقة-استخدام-الكتاب' },
           ],
         },
         {
-          label: 'Bagian 1: Fondasi & Etika Lisan',
+          label: 'الجزء الأول: الأساسيات وأخلاقيات القول', // Bagian 1: Fondasi & Etika Lisan
           items: [
-            { label: 'Bab 1: Prinsip Qaulan', slug: 'bab-1-prinsip-qaulan' },
-            { label: 'Bab 2: Seni Mendengar', slug: 'bab-2-active-listening' },
-            { label: 'Bab 3: Gestur & Bahasa Tubuh', slug: 'bab-3-bahasa-tubuh' },
-            { label: 'Bab 4: Dalam Rumah & Keluarga', slug: 'bab-4-keluarga' },
+            { label: 'الفصل الأول: مبادئ القول القرآني', slug: 'الفصل-الأول-أسس-القول-مبادئ-القول-الستة' },
+            { label: 'الفصل الثاني: فن الاستماع والإنصات', slug: 'الفصل-الثاني-فن-الاستماع-الاستماع-الفعال' },
+            { label: 'الفصل الثالث: لغة الجسد ونبرة الصوت', slug: 'الفصل-الثالث-الوضوح-نبرة-الصوت-ولغة-الجسد' },
+            { label: 'الفصل الرابع: التواصل الأسري', slug: 'الفصل-الرابع-في-البيت-الزوجة-والأطفال' },
           ],
         },
         {
-          label: 'Bagian 2: Berdasarkan Audiens',
+          label: 'الجزء الثاني: التواصل حسب المخاطَبين', // Bagian 2: Berdasarkan Audiens
           items: [
-            { label: 'Bab 5: Sahabat & Tim Kerja', slug: 'bab-5-sahabat' },
-            { label: 'Bab 6: Masyarakat & Orang Awam', slug: 'bab-6-masyarakat' },
-            { label: 'Bab 7: Musuh & Oposisi', slug: 'bab-7-musuh-oposisi' },
+            { label: 'الفصل الخامس: مع الأصحاب وفريق العمل', slug: 'الفصل-الخامس-مع-الأصحاب-وفريق-العمل' },
+            { label: 'الفصل السادس: مع عامة الناس والمجتمع', slug: 'الفصل-السادس-مع-عامة-الناس-والمجتمع' },
+            { label: 'الفصل السابع: مع الخصوم والمعارضين', slug: 'الفصل-السابع-مع-الأعداء-والمعارضين' },
           ],
         },
         {
-          label: 'Bagian 3: Situasi Khusus',
+          label: 'الجزء الثالث: مواقف خاصة', // Bagian 3: Situasi Khusus
           items: [
-            { label: 'Bab 8: Kepemimpinan & Strategi', slug: 'bab-8-kepemimpinan' },
-            { label: 'Bab 9: Dalam Krisis & Perang', slug: 'bab-9-krisis-perang' },
-            { label: 'Bab 10: Kritik & Evaluasi', slug: 'bab-10-kritik-evaluasi' },
+            { label: 'الفصل الثامن: القيادة والاستراتيجية', slug: 'الفصل-الثامن-القيادة-والتواصل-الاستراتيجي' },
+            { label: 'الفصل التاسع: في الأزمات والحروب', slug: 'الفصل-التاسع-في-الأزمات-والحروب-والضغوط-العالية' },
+            { label: 'الفصل العاشر: النقد والتقييم', slug: 'الفصل-العاشر-تقديم-النقد-وتصحيح-الأخطاء' },
+          ],
+        },
+        {
+          label: 'المراجع', // Back Matter / Referensi
+          items: [
+            { label: 'المراجع والمصادر', slug: 'المراجع-والمصادر' },
           ],
         },
       ],
