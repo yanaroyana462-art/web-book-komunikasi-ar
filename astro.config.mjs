@@ -23,7 +23,7 @@ export default defineConfig({
       sidebar: [
         {
           label: 'محتويات الكتاب',
-          autogenerate: { directory: '' },
+          items: [{ autogenerate: { directory: '' } }],
         },
       ],
     }),
