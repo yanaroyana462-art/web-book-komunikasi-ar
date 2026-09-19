@@ -4,9 +4,12 @@ description: دليل عملي لإتقان فن التواصل استنادًا
 template: splash
 hero:
   tagline: الدمج بين أخلاقيات القول القرآني، وبلاغة الرفق عند رسول الله ﷺ، وتواصل القيادة في الحياة اليومية.
+  actions:
+    - text: ابدأ القراءة
+      link: /00-pengantar/
+      icon: left-arrow
+      variant: primary
 ---
-
-import { LinkButton } from '@astrojs/starlight/components';
 
 ## الفصول العشرة الرئيسية للتواصل الفعال على طريقة النبوة
 
@@ -21,7 +24,3 @@ import { LinkButton } from '@astrojs/starlight/components';
 - **الأزمات والضغوط العالية:** ضبط المشاعر، وتسكين الهلع، والحفاظ على ثبات القول وقت الأزمات.
 - **النقد والتغذية الراجعة التعليمية:** تصحيح الأخطاء بالحكمة دون جرح كرامة المخاطَب.
 - **المراجع والمصادر:** قائمة المراجع المستندة إلى الآيات القرآنية وأمهات كتب الحديث.
-
-<div style="display: flex; justify-content: center; margin-top: 3rem;">
-  <LinkButton href="/00-pengantar/" icon="left-arrow" variant="primary">ابدأ القراءة</LinkButton>
-</div>
