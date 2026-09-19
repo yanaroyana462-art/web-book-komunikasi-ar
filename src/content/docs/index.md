@@ -23,5 +23,5 @@ import { LinkButton } from '@astrojs/starlight/components';
 - **المراجع والمصادر:** قائمة المراجع المستندة إلى الآيات القرآنية وأمهات كتب الحديث.
 
 <div style="display: flex; justify-content: center; margin-top: 3rem;">
-  <LinkButton href="/pengantar" icon="right-arrow" variant="primary">ابدأ القراءة</LinkButton>
+  <LinkButton href="/00-pengantar" icon="right-arrow" variant="primary">ابدأ القراءة</LinkButton>
 </div>
